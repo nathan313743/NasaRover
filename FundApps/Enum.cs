@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FundApps
 {
-    public enum RoverDirection
+    public enum MoveDirection
     {
         North = 0,
         East = 1,
