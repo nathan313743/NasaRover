@@ -12,7 +12,7 @@ namespace Presentation
         private static void Main(string[] args)
         {
             string input = string.Empty;
-            var translator = new TranslateCommand();
+            var translator = new CommandTranslator();
             Grid grid = new Grid(10, 10, new Position(0, 0));
             DirectionMove direction = new DirectionMove(grid);
             OrientationMove orientation = new OrientationMove();

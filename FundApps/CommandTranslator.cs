@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FundApps
 {
-    public class TranslateCommand
+    public class CommandTranslator
     {
         public Movement Parse(string command)
         {
