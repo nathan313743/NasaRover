@@ -54,9 +54,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FundApps\FundApps.csproj">
+    <ProjectReference Include="..\NasaRover\NasaRover.csproj">
       <Project>{0b56a960-3a80-4046-b40d-ad677ba59208}</Project>
-      <Name>FundApps</Name>
+      <Name>NasaRover</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

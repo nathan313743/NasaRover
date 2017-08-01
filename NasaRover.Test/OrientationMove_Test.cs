@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace FundApps.Test
+namespace NasaRover.Test
 {
     [TestFixture]
     internal class OrientationMove_Test

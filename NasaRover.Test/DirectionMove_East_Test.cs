@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace FundApps.Test
+namespace NasaRover.Test
 {
     [TestFixture]
-    internal class DirectionMove_North_Test
+    internal class DirectionMove_East_Test
     {
         private DirectionMove _directionMove;
         private Grid _grid;
@@ -19,42 +19,42 @@ namespace FundApps.Test
         {
             _grid = new Grid(4, 4, new Position(0, 0));
             _directionMove = new DirectionMove(_grid);
-            direction = MoveDirection.North;
+            direction = MoveDirection.East;
         }
 
         [Test]
-        public void Move_Forward_North()
+        public void Move_Forward_East()
         {
             Assert.AreEqual(0, _grid.CurrentPosition.X);
             Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Forward, direction);
-            Assert.AreEqual(0, _grid.CurrentPosition.X);
-            Assert.AreEqual(1, _grid.CurrentPosition.Y);
+            Assert.AreEqual(1, _grid.CurrentPosition.X);
+            Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Forward, direction);
-            Assert.AreEqual(0, _grid.CurrentPosition.X);
-            Assert.AreEqual(2, _grid.CurrentPosition.Y);
+            Assert.AreEqual(2, _grid.CurrentPosition.X);
+            Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Forward, direction);
-            Assert.AreEqual(0, _grid.CurrentPosition.X);
-            Assert.AreEqual(3, _grid.CurrentPosition.Y);
+            Assert.AreEqual(3, _grid.CurrentPosition.X);
+            Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Forward, direction);
             Assert.AreEqual(0, _grid.CurrentPosition.X);
             Assert.AreEqual(0, _grid.CurrentPosition.Y);
         }
 
         [Test]
-        public void Move_Backwards_North()
+        public void Move_Backwards_East()
         {
             Assert.AreEqual(0, _grid.CurrentPosition.X);
             Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Backwards, direction);
-            Assert.AreEqual(0, _grid.CurrentPosition.X);
-            Assert.AreEqual(3, _grid.CurrentPosition.Y);
+            Assert.AreEqual(3, _grid.CurrentPosition.X);
+            Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Backwards, direction);
-            Assert.AreEqual(0, _grid.CurrentPosition.X);
-            Assert.AreEqual(2, _grid.CurrentPosition.Y);
+            Assert.AreEqual(2, _grid.CurrentPosition.X);
+            Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Backwards, direction);
-            Assert.AreEqual(0, _grid.CurrentPosition.X);
-            Assert.AreEqual(1, _grid.CurrentPosition.Y);
+            Assert.AreEqual(1, _grid.CurrentPosition.X);
+            Assert.AreEqual(0, _grid.CurrentPosition.Y);
             _directionMove.Move(Movement.Backwards, direction);
             Assert.AreEqual(0, _grid.CurrentPosition.X);
             Assert.AreEqual(0, _grid.CurrentPosition.Y);

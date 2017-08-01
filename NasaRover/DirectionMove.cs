@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FundApps
+namespace NasaRover
 {
     public class DirectionMove
     {
